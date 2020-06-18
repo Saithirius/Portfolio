@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #15151d;
+  color: #ddd;
+  font-family: sans-serif;
+}
+section {
+  width: 80vw;
+  margin: 70px auto 70px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #ddd;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #81413a;
+  border-radius: 5px;
+}
+@media (min-width: 1440px) {
+  section {
+    width: 80vw;
+    margin: 150px auto 150px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p,
+  a,
+  dt,
+  dd {
+    font-size: 23px;
+  }
+}

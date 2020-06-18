@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <meta name="description" content="Портфолио Смородинова Павла Junior Frontend-разработчика на React\Redux"/>
+    <meta name="Keywords" content="портфолио резюме frontend react" />
+    <title>Смородинов Павел</title>
+    <link rel="icon" href="img/pageLogo.ico" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  <!-- Шапка -->
+    <div class="navbar">
+      <p><a href="#aboutMe">Обо мне</a></p>
+      <p><a href="#examples">Примеры работ</a></p>
+      <p><a href="#contacts">Контакты</a></p>
+    </div>
+
+  <!-- Обо мне -->
+    <p><a id="aboutMe"></a></p>  
+    <section class="aboutMe">
+      <h1 class="header">Frontend-разработчик</br>{React\Redux}</h1>
+      <div class="row">
+      <div class="photo">
+        <img src="img/myPhoto.jpg" alt="" />
+      </div>
+      <div class="data">
+        <p class="tag">&lt;aboutMe&gt;</p>
+        <dl>
+          <dt>ФИО:</dt><dd>Смородинов Павел Родионович</dd>
+          <dt>Место проживание:</dt><dd>Екатеринбург</dd>
+          <dt>Возраст:</dt><dd>21 год</dd>
+          <dt>Образование:</dt><dd>среднее + 1 год учебы в УрФУ</br><small>(Фундаментальная информатика и информационные технологии)</small></dd>
+          <dt>Технологии:</dt><dd class="bottom-dd">HTML, CSS, JS, React, Redux</dd>
+        </dl>
+        <p class="tag">&lt;/aboutMe&gt;</p>
+      </div>
+    </div>
+    <p><a id="examples"></a></p>
+    </section>
+
+  <!-- Примеры работ -->
+    <section class="examples">
+      <h2>Примеры работ</h2>
+      <div class="blocks">
+        <div id="first-block" class="block first-block">
+          <p>HTML CSS</p>
+          <div class="row">
+            <a href="https://saithirius.github.io/Plaster/"><img src="img/plaster.png" alt=""></a>
+            <a href="https://saithirius.github.io/Cleaning/"><img src="img/clover.png" alt=""></a>
+          </div>
+        </div>
+        <div id="second-block" class="block">
+          <p>React Redux</p>
+          <a href="https://saithirius.github.io/ReactApp/"><img src="img/SocialNetwork.png" alt=""></a>
+          <div class="small">
+            <p>Данные для входа</p>
+            <p><b>Email:</b> free@samuraijs.com</p>
+            <p><b>Password:</b> free</p>
+          </div>
+        </div>
+      </div>
+      <p><a id="contacts"></a></p>
+    </section>
+  <!-- Контакты -->
+    <section class="contacts-section">
+      <h2>Контакты</h2>
+      <div class="contacts">
+        <div class="contact">
+          <img src="img/vk.svg" alt="">
+          <p><a href="https://vk.com/smorodinovpavel">Смородинов Павел</a></p>
+        </div>
+        <div class="contact">
+          <img src="img/mail.svg" alt="">
+          <p><a href="mailto: pavel.smor.ekb@mail.ru">pavel.smor.ekb@mail.ru</a></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Плавная прокрутка -->
+    <script>
+      $("body").on('click', '[href*="#"]', function(e){
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - 50 }, 1000);
+        e.preventDefault();
+      });
+    </script>
+  <!-- Анимация появления примеров -->
+    <script>
+      $(window).scroll(function(){
+        if(document.documentElement.clientHeight + $(window).scrollTop() > $('#first-block').offset().top){
+          $('#first-block').addClass('animate');
+          $('#second-block').addClass('animate');
+        }
+      })
+    </script>
+  </body>
+</html>
