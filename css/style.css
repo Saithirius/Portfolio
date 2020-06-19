@@ -3,6 +3,8 @@
   z-index: 1;
   top: 0;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,9 +14,19 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 20px;
-  font-weight: bold;
   background-color: #0f0f0f;
+}
+.navbar p {
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (min-width: 414px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar p {
+    font-size: 16px;
+  }
 }
 @media (min-width: 768px) {
   .navbar {
@@ -118,19 +130,22 @@
   display: block;
   margin: 0 auto;
   width: 35vw;
-  -webkit-filter: blur(2px) grayscale(100%);
-          filter: blur(2px) grayscale(100%);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  /* Animation */
 }
-.examples .block img:hover {
-  -webkit-filter: blur(0px) grayscale(0%);
-          filter: blur(0px) grayscale(0%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (min-width: 1024px) {
+  .examples .block img {
+    -webkit-filter: blur(2px) grayscale(100%);
+            filter: blur(2px) grayscale(100%);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .examples .block img:hover {
+    -webkit-filter: blur(0px) grayscale(0%);
+            filter: blur(0px) grayscale(0%);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 @media (min-width: 1440px) {
   .blocks {
