@@ -1,14 +1,27 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  background-color: #15151d;
   color: #ddd;
   font-family: sans-serif;
 }
 section {
+  padding: 70px 0;
+  &.dark{
+    background-color: #15151d;
+  }
+  &.light{
+    background-color: #1d1d29;
+  }
+}
+.section-content{
+  max-width: 1550px;
   width: 80vw;
-  margin: 70px auto 70px;
+  margin: 0 auto;
 }
 h1, h2{
+  margin: 0;
   text-align: center;
 }
 a, a:visited{
@@ -22,10 +35,13 @@ a, a:visited{
   background: #81413a;
   border-radius: 5px;
 }
+::-webkit-scrollbar-track {
+  background: #1d1d29;
+}
+
 @media (min-width: 1440px) {
   section {
-    width: 80vw;
-    margin: 150px auto 150px;
+    padding: 150px 0;
   }
   h1{
     font-size: 46px;

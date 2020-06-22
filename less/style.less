@@ -59,11 +59,10 @@
 }
 @media (min-width: 768px) {
   .aboutMe{
-    margin: 10px auto 70px;
-  }
-}
-@media (min-width: 1024px) {
-  .aboutMe{
+    padding: 10px 0 70px;
+    .header {
+      padding: 40px 0;
+    }
     .row{
       display: flex;
       flex-direction: row;
@@ -77,8 +76,18 @@
       display: flex;
       flex-direction: column;
       align-self: center;
-      margin-left: 100px;
+      margin-left: 40px;
       width: max-content;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .aboutMe{
+    .header {
+      padding: 40px 0 100px;
+    }
+    .data{
+      margin-left: 100px;
     }
   }
 }
@@ -107,6 +116,7 @@
     img{
       display: block;
       margin: 0 auto;
+      max-width: 480px;
       width: 35vw;
     }
   }
@@ -179,4 +189,8 @@
       font-size: 36px;
     }
   }
+}
+// Якоря
+.anchor{
+  margin: 0;
 }
