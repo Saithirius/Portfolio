@@ -116,6 +116,11 @@
   margin: 350px 0 50px;
   text-align: center;
 }
+.examples .block .heading {
+  display: block;
+  margin: 23px 0;
+  font-size: 23px;
+}
 .examples .block .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,10 +135,7 @@
 }
 .examples .block .small {
   margin-top: 10px;
-}
-.examples .block .small p {
-  margin: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 .examples .block img {
   display: block;
@@ -170,7 +172,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .blocks .first-block {
+  .blocks #first-block {
     width: 65%;
   }
   .blocks .block img {
@@ -178,8 +180,6 @@
   }
   .blocks .block .small {
     margin-top: 30px;
-  }
-  .blocks .block .small p {
     font-size: 16px;
   }
 }
@@ -209,6 +209,9 @@
           flex-direction: row;
   margin: 20px 0;
   font-size: 20px;
+}
+.contact span {
+  margin: auto 0;
 }
 .contact img {
   width: 40px;

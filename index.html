@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Шапка -->
-    <div class="navbar">
-      <p><a href="#aboutMe">Обо мне</a></p>
-      <p><a href="#examples">Примеры работ</a></p>
-      <p><a href="#contacts">Контакты</a></p>
-    </div>
-
-    <!-- Обо мне -->
     <header>
+      <!-- Шапка -->
+      <nav class="navbar">
+        <p><a href="#aboutMe">Обо мне</a></p>
+        <p><a href="#examples">Примеры работ</a></p>
+        <p><a href="#contacts">Контакты</a></p>
+      </nav>
+      <!-- Обо мне -->
       <section class="aboutMe light">
         <div class="section-content">
           <p class="anchor"><a id="aboutMe"></a></p>  
@@ -29,7 +28,7 @@
               <img src="img/myPhoto.jpg" alt="" />
             </div>
             <div class="data">
-              <p class="tag">&lt;aboutMe&gt;</p>
+              <span class="tag">&lt;aboutMe&gt;</span>
               <dl>
                 <dt>ФИО:</dt><dd>Смородинов Павел Родионович</dd>
                 <dt>Место проживание:</dt><dd>Екатеринбург</dd>
@@ -37,7 +36,7 @@
                 <dt>Образование:</dt><dd>среднее + 1 год учебы в УрФУ</br><small>(Фундаментальная информатика и информационные технологии)</small></dd>
                 <dt>Технологии:</dt><dd class="bottom-dd">HTML, CSS, JS, React, Redux</dd>
               </dl>
-              <p class="tag">&lt;/aboutMe&gt;</p>
+              <span class="tag">&lt;/aboutMe&gt;</span>
             </div>
           </div>
         </div>
@@ -50,22 +49,25 @@
         <p class="anchor"><a id="examples"></a></p>
         <h2>Примеры работ</h2>
         <div class="blocks">
-          <div id="first-block" class="block first-block">
-            <p>HTML CSS</p>
+
+          <figure id="first-block" class="block">
+            <span class="heading">HTML CSS</span>
             <div class="row">
               <a href="https://saithirius.github.io/Plaster/" target="_blank"><img src="img/plaster.png" alt=""></a>
               <a href="https://saithirius.github.io/Cleaning/" target="_blank"><img src="img/clover.png" alt=""></a>
             </div>
-          </div>
-          <div id="second-block" class="block">
-            <p>React Redux</p>
+          </figure>
+
+          <figure id="second-block" class="block">
+            <span class="heading">React Redux</span>
             <a href="https://saithirius.github.io/ReactApp/" target="_blank"><img src="img/SocialNetwork.png" alt=""></a>
-            <div class="small">
-              <p>Данные для входа</p>
-              <p><b>Email:</b> free@samuraijs.com</p>
-              <p><b>Password:</b> free</p>
-            </div>
-          </div>
+            <p class="small">
+              Данные для входа</br>
+              <b>Email:</b> free@samuraijs.com</br>
+              <b>Password:</b> free
+            </p>
+          </figure>
+
         </div>
       </div>
     </section>
@@ -77,11 +79,11 @@
         <div class="contacts">
           <div class="contact">
             <img src="img/vk.svg" alt="">
-            <p><a href="https://vk.com/smorodinovpavel">Смородинов Павел</a></p>
+            <span><a href="https://vk.com/smorodinovpavel">Смородинов Павел</a></span>
           </div>
           <div class="contact">
             <img src="img/mail.svg" alt="">
-            <p><a href="mailto: pavel.smor.ekb@mail.ru">pavel.smor.ekb@mail.ru</a></p>
+            <span><a href="mailto: pavel.smor.ekb@mail.ru">pavel.smor.ekb@mail.ru</a></span>
           </div>
         </div>
       </div>
