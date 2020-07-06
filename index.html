@@ -47,18 +47,25 @@
     <section class="examples dark">
       <div class="section-content">
         <p class="anchor"><a id="examples"></a></p>
-        <h2>Примеры работ</h2>
-        <div class="blocks">
+        <h2 class="examples__header">Примеры работ</h2>
+        <div class="examples__blocks">
 
-          <figure id="first-block" class="block">
+          <figure id="HTML-block" class="examples__block">
             <span class="heading">HTML CSS</span>
-            <div class="row">
-              <a href="https://saithirius.github.io/Plaster/" target="_blank"><img src="img/plaster.png" alt="Скриншот сайта"></a>
-              <a href="https://saithirius.github.io/Cleaning/" target="_blank"><img src="img/clover.png" alt="Скриншот сайта"></a>
-            </div>
+            <a href="https://saithirius.github.io/Plaster/" target="_blank"><img src="img/plaster.png" alt="Скриншот сайта"></a>
           </figure>
 
-          <figure id="second-block" class="block">
+          <figure id="HTML-block" class="examples__block">
+            <span class="heading">HTML CSS</span>
+            <a href="https://saithirius.github.io/Cleaning/" target="_blank"><img src="img/clover.png" alt="Скриншот сайта"></a>
+          </figure>
+
+          <figure id="GRID-block" class="examples__block">
+            <span class="heading">CSS Grid</span>
+            <a href="https://saithirius.github.io/PortfolioTemplate/" target="_blank"><img src="img/grid.png" alt="Скриншот сайта"></a>
+          </figure>
+
+          <figure id="REACT-block" class="examples__block">
             <span class="heading">React Redux</span>
             <a href="https://saithirius.github.io/ReactApp/" target="_blank"><img src="img/SocialNetwork.png" alt="Скриншот сайта"></a>
             <p class="small">
@@ -101,8 +108,8 @@
     <!-- Анимация появления примеров -->
     <script>
       $(window).scroll(function() {
-        if($(window).height() + $(window).scrollTop() > $('#first-block').offset().top){
-          $('#first-block, #second-block').addClass('animate');
+        if($(window).height() + $(window).scrollTop() > $('.examples__header').offset().top){
+          $('.examples__blocks').addClass('animate');
         }
       })
     </script>
