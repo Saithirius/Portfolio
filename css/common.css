@@ -10,11 +10,11 @@ section {
   padding: 70px 0;
 }
 section.colorBG {
-  background-color: #151515;
+  background-color: #111;
 }
 section.imgBG {
   background-color: #1d1d29;
-  background-image: url(../img/lightBG.png);
+  background-image: url(../img/mainBG.png);
   background-attachment: fixed;
 }
 .section-content {
