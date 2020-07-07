@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -10,11 +9,13 @@ body {
 section {
   padding: 70px 0;
 }
-section.dark {
-  background-color: #15151d;
+section.colorBG {
+  background-color: #151515;
 }
-section.light {
+section.imgBG {
   background-color: #1d1d29;
+  background-image: url(../img/lightBG.png);
+  background-attachment: fixed;
 }
 .section-content {
   max-width: 1550px;
