@@ -34,12 +34,20 @@
   flex-direction: column;
   align-items: center;
 }
+.aboutMe__main .photo {
+  overflow: visible;
+}
 .aboutMe__main .photo img {
   display: block;
   margin: 0 auto 50px;
   width: 60vw;
   max-width: 500px;
   border-radius: 10px;
+  opacity: 0;
+}
+.aboutMe__main .data {
+  position: relative;
+  left: 100%;
 }
 .aboutMe__main .data .tag {
   margin: 0;

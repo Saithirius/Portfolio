@@ -98,20 +98,6 @@
 
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Плавная прокрутка -->
-    <script>
-      $("body").on('click', '[href*="#"]', function(e){
-        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - 50 }, 1000);
-        e.preventDefault();
-      });
-    </script>
-    <!-- Анимация появления примеров -->
-    <script>
-      $(window).scroll(function() {
-        if($(window).height() + $(window).scrollTop() > $('.examples__header').offset().top){
-          $('.examples__blocks').addClass('animate');
-        }
-      })
-    </script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
