@@ -12,18 +12,14 @@
     font-size: 14px;
     font-weight: bold;
   }
-}
-@media (min-width: 410px) {
-  .navbar{
+  @media (min-width: 410px) {
     padding: 0 40px;
     p{
       font-size: 16px;
+    }
+    @media (min-width: 760px) {
+      display: none; 
     }  
-  }
-}
-@media (min-width: 760px) {
-  .navbar{
-    display: none; 
   }
 }
 // Обо мне
@@ -55,7 +51,6 @@
     }
   }
   @media (min-width: 760px) {
-    height: 100vh;
     padding: 10px 0 70px;
     .header {
       height: 20vh;
@@ -80,6 +75,7 @@
       }
     }
     @media (min-width: 1020px) {
+      height: 100vh;
       &__main{
         display: flex;
         flex-direction: row;
@@ -90,7 +86,6 @@
     }
   }
 }
-
 // Примеры
 .examples__blocks{
   display: grid;

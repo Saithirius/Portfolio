@@ -21,7 +21,7 @@
     font-size: 16px;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 410px) and (min-width: 760px) {
   .navbar {
     display: none;
   }
@@ -68,7 +68,6 @@
 }
 @media (min-width: 760px) {
   .aboutMe {
-    height: 100vh;
     padding: 10px 0 70px;
   }
   .aboutMe .header {
@@ -93,6 +92,9 @@
   }
 }
 @media (min-width: 760px) and (min-width: 1020px) {
+  .aboutMe {
+    height: 100vh;
+  }
   .aboutMe__main {
     display: flex;
     flex-direction: row;
